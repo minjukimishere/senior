@@ -22,7 +22,7 @@ df = pd.read_csv(file_path)
 def main():
     # Multiselector for 'divde' column
     divde_options = df['DIVIDE'].unique()
-    selected_divdes = st.multiselect('Select divde', divde_options)
+    selected_divdes = st.multiselect('구직을 준비하고 계신가요? 복지 정보를 찾으시나요?', divde_options)
 
     if selected_divdes:
         # Filter dataframe based on selected divde
